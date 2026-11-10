@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FightGear — Магазин экипировки для единоборств</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>FightGear</h1>
+        <h2>Профессиональная экипировка для единоборств</h2>
+        <h3>Твой путь к победе начинается здесь</h3>
+    </header>
+    
+    <nav>
+        <div class="menu-container">
+            <span class="menu-title">Меню сайта ☰</span>
+            <div class="dropdown-menu">
+                <a href="index.html">Главная</a>
+                <a href="catalog.html">Каталог товаров</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <p>Добро пожаловать в магазин лучшей защитной экипировки и одежды для ММА, бокса и карате. Мы помогаем спортсменам любого уровня тренироваться безопасно и эффективно.</p>
+        
+        <h4>Наш ассортимент включает:</h4>
+        <ul>
+            <li>Боксерские перчатки (тренировочные и снарядные)</li>
+            <li>Защита голени, стопы и паха</li>
+            <li>Шлемы с максимальным уровнем обзора</li>
+            <li>Эластичные боксерские бинты для защиты суставов</li>
+        </ul>
+        
+        <h4>3 шага к правильному выбору:</h4>
+        <ol>
+            <li>Измерьте свой точный вес и рост</li>
+            <li>Используйте нашу таблицу размеров ниже</li>
+            <li>Воспользуйтесь онлайн-калькулятором стоимости комплекта</li>
+        </ol>
+        
+        <a href="#calculator-section" class="promo-link">Перейти к расчёту комплекта ↓</a>
+        
+        <img src="https://pinimg.com" alt="Боксерские перчатки на ринге" width="300" height="200">
+        
+        <h4>Таблица подбора веса перчаток</h4>
+        <table>
+            <tr>
+                <th>Вес спортсмена (кг)</th>
+                <th>Рекомендуемый вес перчаток (oz / унции)</th>
+            </tr>
+            <tr>
+                <td>До 60 кг</td>
+                <td>10 oz</td>
+            </tr>
+            <tr>
+                <td>60 – 75 кг</td>
+                <td>12 oz</td>
+            </tr>
+            <tr>
+                <td>75 – 90 кг</td>
+                <td>14 oz</td>
+            </tr>
+            <tr>
+                <td>Более 90 кг</td>
+                <td>16 oz</td>
+            </tr>
+        </table>
+
+        <!-- СЕКЦИЯ С КАЛЬКУЛЯТОРОМ -->
+        <section id="calculator-section" class="calc-box">
+            <h4>Калькулятор стоимости стартового комплекта</h4>
+            <p>Выберите нужные элементы, чтобы узнать предварительную стоимость:</p>
+            
+            <form id="orderForm">
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="gloves" value="3500"> Боксерские перчатки (+3 500 руб.)
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="helmet" value="4200"> Защитный шлем (+4 200 руб.)
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="shin" value="2800"> Защита голени (+2 800 руб.)
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="bandages" value="600"> Бинты боксерские (+600 руб.)
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="discount">Уровень вашей клубной скидки:</label>
+                    <select id="discount">
+                        <option value="0">Нет скидки</option>
+                        <option value="5">Студент / Новичок (5%)</option>
+                        <option value="10">Карта клуба (10%)</option>
+                    </select>
+                </div>
+
+                <button type="button" id="calcBtn">Рассчитать стоимость</button>
+            </form>
+
+            <div class="result-container">
+                <p>Итоговая сумма: <span id="totalPrice">0</span> рублей.</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        © 2026 Магазин экипировки FightGear. Все права защищены.
+    </footer>
+
+    <!-- Подключаем JavaScript файл -->
+    <script src="script.js"></script>
+</body>
+</html>

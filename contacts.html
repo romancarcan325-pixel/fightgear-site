@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — FightGear</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>FightGear</h1>
+        <h2>Наши контакты</h2>
+        <h3>Мы всегда на связи со спортсменами</h3>
+    </header>
+    
+    <nav>
+        <div class="menu-container">
+            <span class="menu-title">Меню сайта ☰</span>
+            <div class="dropdown-menu">
+                <a href="index.html">Главная</a>
+                <a href="catalog.html">Каталог товаров</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <p>Если у вас возникли вопросы по подбору унций, размеров экипировки или условиям доставки, свяжитесь с нашей службой поддержки клиентов.</p>
+        
+        <h4>Информация для связи:</h4>
+        <ul>
+            <li><strong>Телефон горячей линии:</strong> 8 (800) 555-35-35 (Звонок бесплатный)</li>
+            <li><strong>Электронная почта:</strong> support@fightgear-store.ru</li>
+            <li><strong>Адрес центрального склада:</strong> г. Москва, ул. Спортивная, д. 12, офис 4</li>
+        </ul>
+
+        <h4>Режим работы службы поддержки:</h4>
+        <ol>
+            <li>Будние дни: с 09:00 до 21:00</li>
+            <li>Суббота и Воскресенье: с 10:00 до 18:00</li>
+            <li>Заказы через сайт: принимаются круглосуточно</li>
+        </ol>
+
+        <!-- Простая статичная форма обратной связи, оформленная как калькулятор -->
+        <section class="calc-box">
+            <h4>Напишите нам напрямую</h4>
+            <p>Заполните форму, и наш менеджер-боец перезвонит вам в течение 15 минут:</p>
+            
+            <form onsubmit="alert('Сообщение успешно отправлено!'); return false;">
+                <div class="form-group">
+                    <label style="margin-bottom: 5px;">Ваше имя:</label>
+                    <input type="text" required style="padding: 8px; width: 100%; max-width: 300px; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                <div class="form-group">
+                    <label style="margin-bottom: 5px;">Номер телефона или Email:</label>
+                    <input type="text" required style="padding: 8px; width: 100%; max-width: 300px; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                <div class="form-group">
+                    <label style="margin-bottom: 5px;">Какая экипировка вас интересует:</label>
+                    <select>
+                        <option>Боксерские перчатки</option>
+                        <option>Защита шлемы/щитки</option>
+                        <option>Другой вопрос</option>
+                    </select>
+                </div>
+                
+                <button type="submit" id="calcBtn">Отправить заявку</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        © 2026 Магазин экипировки FightGear. Все права защищены.
+    </footer>
+</body>
+</html>
